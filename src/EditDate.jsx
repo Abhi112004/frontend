@@ -22,7 +22,7 @@ const EditDate = () => {
         txtemail.current.value = response.data.Data["email"];
         txtpassword.current.value = response.data.Data["password"];
       });
-  }, []);
+  }, [id]);
   const HandleSubmit = (e) => {
     e.preventDefault();
     var name = txtname.current.value;
