@@ -17,7 +17,7 @@ const Login = () => {
     pass.set("password", password);
 
     axios
-      .post("http://localhost:5000/login", pass)
+      .post("https://backend-production-4cc1.up.railway.app/login", pass)
       .then(function (response) {
         if (response.data["status"]) {
           alert("Data login successfully");

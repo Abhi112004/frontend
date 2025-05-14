@@ -15,7 +15,7 @@ const EditDate = () => {
     pass.set("id", id);
 
     axios
-      .post("http://localhost:5000/single-data", pass)
+      .post("https://backend-production-4cc1.up.railway.app/single-data", pass)
       .then(function (response) {
         console.log(response.data.Data["name"]);
         txtname.current.value = response.data.Data["name"];
@@ -36,7 +36,7 @@ const EditDate = () => {
     pass.set("id", id);
 
     axios
-      .put("http://localhost:5000/edit-data", pass)
+      .put("https://backend-production-4cc1.up.railway.app/edit-data", pass)
       .then(function (response) {
         if (response.data["status"]) {
           nav("/View");

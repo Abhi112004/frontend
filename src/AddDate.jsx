@@ -20,7 +20,7 @@ const AddDate = () => {
     pass.set("password", password);
 
     axios
-      .post("http://localhost:5000/", pass)
+      .post("https://backend-production-4cc1.up.railway.app/", pass)
       .then(function (response) {
         console.log(response.data['status'])
         

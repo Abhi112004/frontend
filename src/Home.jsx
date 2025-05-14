@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
   const apidata = () => {
     axios
-      .get("http://localhost:5000/")
+      .get("https://backend-production-4cc1.up.railway.app/")
       .then(function (response) {
         // console.log(response.data['Data']);
         
@@ -25,7 +25,7 @@ const Home = () => {
       params.set("id", id);
       
       axios
-        .put("http://localhost:5000/delete-data", params)
+        .put("https://backend-production-4cc1.up.railway.app/delete-data", params)
         .then(function (response) {
           if (response.data["status"]) {
             alert("Data deleted successfully");
